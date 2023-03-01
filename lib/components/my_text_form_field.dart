@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyTextField extends StatelessWidget {
+class MyTextFormField extends StatelessWidget {
   final TextEditingController myController;
   final IconData myIcon;
   final String myText;
   final TextInputType myTextInputType;
   final bool? myObscureText;
-  const MyTextField({
+  const MyTextFormField({
     super.key,
     required this.myController,
     required this.myIcon,
