@@ -17,9 +17,9 @@ class MyPaint extends CustomPainter {
     paint.style = PaintingStyle.fill;
     paint.strokeWidth = 10.0;
     final path = Path();
-    path.lineTo(0, size.height * 0.3);
-    path.quadraticBezierTo(size.width * 0.2, size.height * 0.10, size.width * 0.5, size.height * 0.25);
-    path.quadraticBezierTo( size.width * 0.80, size.height * 0.4, size.width, size.height * 0.3);
+    path.lineTo(0, size.height * 0.2);
+    path.quadraticBezierTo(size.width * 0.2, size.height * 0.12, size.width * 0.5, size.height * 0.2);
+    path.quadraticBezierTo( size.width * 0.8, size.height * 0.3, size.width, size.height * 0.2);
     path.lineTo(size.width, 0);
     canvas.drawPath(path, paint); 
   }

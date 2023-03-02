@@ -35,7 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Stack(
               children: [
                 SizedBox(
-                  height: 420,
+                  height: 500,
                   width: double.infinity,
                   child: CustomPaint(
                     painter: MyPaint(),
@@ -51,7 +51,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       'REGISTER',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 36,
+                        fontSize: 28,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -93,14 +93,16 @@ class _RegisterPageState extends State<RegisterPage> {
                     MyButton(
                       myOnTap: validateAndSave,
                       myTextButton: 'Register',
-                      myColor: const Color(0xFF6339B2),
+                      myFillColor: const Color(0xFF6339B2),
+                      myTextColor: const Color(0xFFFFFFFF),
                     ),
                     MyButton(
                       myOnTap: () {
                         Navigator.pushNamed(context, '/LoginPage');
                       },
                       myTextButton: 'Login',
-                      myColor: Colors.blueGrey,
+                      myFillColor: const Color(0xFFFFFFFF),
+                      myTextColor: const Color(0xFF000000),
                     )
                   ],
                 ),
