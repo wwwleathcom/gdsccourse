@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/globals.dart' as globals;
+import '../config/helper.dart' as globals;
 
 class MyTextFormField extends StatelessWidget {
   final TextEditingController myController;

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'login_page.dart';
 import 'register_page.dart';
-import '../config/globals.dart' as globals;
+import '../config/helper.dart' as globals;
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdsccourse/components/my_button.dart';
 import '../components/my_paint.dart';
 import '../components/my_text_form_field.dart';
-import '../config/globals.dart' as globals;
+import '../config/helper.dart' as globals;
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
