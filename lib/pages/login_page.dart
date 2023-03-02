@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdsccourse/components/my_button.dart';
 import '../components/my_paint.dart';
 import '../components/my_text_form_field.dart';
+import '../config/globals.dart' as globals;
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -44,9 +45,9 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(
                       height: 25,
                     ),
-                    const Text(
-                      'LOGIN',
-                      style: TextStyle(
+                    Text(
+                      globals.title[0],
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
@@ -71,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     MyButton(
                       myOnTap: validateAndSave,
                       myTextButton: 'Login',
-                      myFillColor: const Color(0xFF6339B2),
+                      myFillColor: globals.frontColor,
                       myTextColor: const Color(0xFFFFFFFF),
                     ),
                     MyButton(

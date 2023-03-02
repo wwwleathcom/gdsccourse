@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../config/globals.dart' as globals;
 
 class MyPaint extends CustomPainter {
   @override
@@ -13,7 +14,7 @@ class MyPaint extends CustomPainter {
 
   void curva1(Canvas canvas, Size size) {
     final paint = Paint();
-    paint.color = const Color(0xFF6339B2);
+    paint.color = globals.frontColor;
     paint.style = PaintingStyle.fill;
     paint.strokeWidth = 10.0;
     final path = Path();

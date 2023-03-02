@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdsccourse/components/my_button.dart';
 import '../components/my_paint.dart';
 import '../components/my_text_form_field.dart';
+import '../config/globals.dart' as globals;
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -47,9 +48,9 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(
                       height: 25,
                     ),
-                    const Text(
-                      'REGISTER',
-                      style: TextStyle(
+                    Text(
+                      globals.title[1],
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
@@ -93,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     MyButton(
                       myOnTap: validateAndSave,
                       myTextButton: 'Register',
-                      myFillColor: const Color(0xFF6339B2),
+                      myFillColor: globals.frontColor,
                       myTextColor: const Color(0xFFFFFFFF),
                     ),
                     MyButton(

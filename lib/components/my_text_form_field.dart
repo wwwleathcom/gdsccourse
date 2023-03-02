@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../config/globals.dart' as globals;
 
 class MyTextFormField extends StatelessWidget {
   final TextEditingController myController;
@@ -70,7 +71,7 @@ class MyTextFormField extends StatelessWidget {
             ),
           ),
           prefixIcon: Icon(
-            color: const Color(0xFF6339B2),
+            color: globals.frontColor,
             myIcon, // dynamic value
             size: 24,
           ),
