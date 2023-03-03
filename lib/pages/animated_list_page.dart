@@ -58,7 +58,6 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
         toolbarHeight: 80,
         elevation: 0,
         backgroundColor: helper.frontColor,
-        leading: Container(),
         centerTitle: true,
         title: Column(
           children: [

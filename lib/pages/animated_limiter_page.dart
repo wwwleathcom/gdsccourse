@@ -18,7 +18,6 @@ class _AnimatedLimiterPageState extends State<AnimatedLimiterPage> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        leading: Container(),
         elevation: 0,
         backgroundColor: helper.frontColor,
         title: const Text('Animation Limiter'),
@@ -54,38 +53,21 @@ class _AnimatedLimiterPageState extends State<AnimatedLimiterPage> {
                         )
                       ]),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    //crossAxisAlignment: ,
                     children: [
-                      Row(
-                        children: [
-                          const SizedBox(width: 10),
-                          const Icon(
-                            Icons.star,
-                            color: Colors.white,
-                          ),
-                          const SizedBox(width: 10),
-                          Text(
-                            items[index],
-                            style: const TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          )
-                        ],
+                      const SizedBox(width: 10),
+                      const Icon(
+                        Icons.star,
+                        color: Colors.white,
                       ),
-                      IconButton(
-                        icon: const Icon(
-                          Icons.delete,
+                      const SizedBox(width: 10),
+                      Text(
+                        items[index],
+                        style: const TextStyle(
+                          fontSize: 20,
                           color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         ),
-                        onPressed: () {
-                          setState(() {
-                            items.removeAt(index);
-                          });
-                        },
-                      ),
+                      )
                     ],
                   ),
                 ),
