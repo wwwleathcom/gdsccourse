@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/helper.dart' as globals;
+import '../config/helper.dart' as helper;
 
 class MyTextFormField extends StatelessWidget {
   final TextEditingController myController;
@@ -44,21 +44,21 @@ class MyTextFormField extends StatelessWidget {
           ),
           errorBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-              width: 2,
+              width: 1,
               color: Color.fromARGB(255, 223, 42, 42),
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-              width: 2,
+              width: 1,
               color: Color.fromARGB(255, 223, 42, 42),
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-              width: 2,
+              width: 1,
               color: Color(0xFF6339B2),
             ),
             borderRadius: BorderRadius.circular(10),
@@ -66,12 +66,12 @@ class MyTextFormField extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              width: 2,
+              width: 1,
               color: Color(0xFF6339B2),
             ),
           ),
           prefixIcon: Icon(
-            color: globals.frontColor,
+            color: helper.frontColor,
             myIcon, // dynamic value
             size: 24,
           ),

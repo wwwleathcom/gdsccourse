@@ -1,4 +1,4 @@
-library globals;
+library helper;
 
 import 'package:flutter/material.dart';
 
@@ -14,5 +14,13 @@ List<String> title = [
   "REGISTER",
 ];
 
+///////////////////Title Of Page ///////
+List<String> routeList = [
+  '/',
+  '/LoginPage',
+  '/RegisterPage',
+  '/AnimatedListPage',
+];
+
 ////////////////////Colors////////////////////
-Color frontColor = const Color(0xFF6339B2);
+Color frontColor = const Color.fromARGB(255, 11, 76, 216);

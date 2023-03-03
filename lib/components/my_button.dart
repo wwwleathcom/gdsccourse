@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/helper.dart' as globals;
+import '../config/helper.dart' as helper;
 
 class MyButton extends StatelessWidget {
   final Function()? myOnTap;
@@ -23,8 +23,8 @@ class MyButton extends StatelessWidget {
             color: myFillColor,
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
-              width: 3,
-              color: globals.frontColor,
+              width: 1,
+              color: helper.frontColor,
             )),
         margin: const EdgeInsets.symmetric(vertical: 10.0),
         padding: const EdgeInsets.symmetric(horizontal: 135.5, vertical: 13.0),

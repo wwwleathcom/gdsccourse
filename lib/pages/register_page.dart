@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdsccourse/components/my_button.dart';
 import '../components/my_paint.dart';
 import '../components/my_text_form_field.dart';
-import '../config/helper.dart' as globals;
+import '../config/helper.dart' as helper;
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -36,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Stack(
               children: [
                 SizedBox(
-                  height: 500,
+                  height: 600,
                   width: double.infinity,
                   child: CustomPaint(
                     painter: MyPaint(),
@@ -46,14 +46,16 @@ class _RegisterPageState extends State<RegisterPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     const SizedBox(
-                      height: 25,
+                      height: 48,
                     ),
                     Text(
-                      globals.title[1],
+                      helper.title[1],
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
+                        letterSpacing: 4,
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
                     const SizedBox(
@@ -94,12 +96,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     MyButton(
                       myOnTap: validateAndSave,
                       myTextButton: 'Register',
-                      myFillColor: globals.frontColor,
+                      myFillColor: helper.frontColor,
                       myTextColor: const Color(0xFFFFFFFF),
                     ),
                     MyButton(
                       myOnTap: () {
-                        Navigator.pushNamed(context, '/LoginPage');
+                        Navigator.pushNamed(context, helper.routeList[1]);
                       },
                       myTextButton: 'Login',
                       myFillColor: const Color(0xFFFFFFFF),

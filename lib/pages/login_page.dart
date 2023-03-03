@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gdsccourse/components/my_button.dart';
 import '../components/my_paint.dart';
 import '../components/my_text_form_field.dart';
-import '../config/helper.dart' as globals;
+import '../config/helper.dart' as helper;
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -20,6 +20,7 @@ class _LoginPageState extends State<LoginPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Processing Data')),
       );
+      Navigator.pushNamed(context, helper.routeList[3]);
     }
   }
 
@@ -33,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Stack(
               children: [
                 SizedBox(
-                  height: 500,
+                  height: 600,
                   width: double.infinity,
                   child: CustomPaint(
                     painter: MyPaint(),
@@ -43,14 +44,16 @@ class _LoginPageState extends State<LoginPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     const SizedBox(
-                      height: 25,
+                      height: 48,
                     ),
                     Text(
-                      globals.title[0],
+                      helper.title[0],
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
+                        letterSpacing: 4,
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
                     const SizedBox(
@@ -72,12 +75,12 @@ class _LoginPageState extends State<LoginPage> {
                     MyButton(
                       myOnTap: validateAndSave,
                       myTextButton: 'Login',
-                      myFillColor: globals.frontColor,
+                      myFillColor: helper.frontColor,
                       myTextColor: const Color(0xFFFFFFFF),
                     ),
                     MyButton(
                       myOnTap: () {
-                        Navigator.pushNamed(context, '/RegisterPage');
+                        Navigator.pushNamed(context, helper.routeList[2]);
                       },
                       myTextButton: 'Register',
                       myFillColor: const Color(0xFFFFFFFF),
