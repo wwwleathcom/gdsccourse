@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         leading: Container(),
         elevation: 0,
         backgroundColor: helper.frontColor,
-        title: const Text('Home Page'),
+        title: Text(helper.myRouteList[3][0]),
         centerTitle: true,
       ),
       body: Column(
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
             width: double.infinity,
             child: MyButton(
               myOnTap: () {
-                Navigator.pushNamed(context, helper.routeList[4]);
+                Navigator.pushNamed(context, helper.myRouteList[4][1]);
               },
               myTextButton: 'Animated Limiter',
               myFillColor: helper.frontColor,
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             width: double.infinity,
             child: MyButton(
               myOnTap: () {
-                Navigator.pushNamed(context, helper.routeList[5]);
+                Navigator.pushNamed(context, helper.myRouteList[5][1]);
               },
               myTextButton: 'Animated List',
               myFillColor: helper.frontColor,

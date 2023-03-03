@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Processing Data')),
       );
-      Navigator.pushNamed(context, helper.routeList[3]);
+      Navigator.pushNamed(context,helper.myRouteList[3][1]);
     }
   }
 
@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 48,
                     ),
                     Text(
-                      helper.title[0],
+                      helper.myRouteList[1][0],
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     MyButton(
                       myOnTap: () {
-                        Navigator.pushNamed(context, helper.routeList[2]);
+                        Navigator.pushNamed(context, helper.myRouteList[2][1]);
                       },
                       myTextButton: 'Register',
                       myFillColor: const Color(0xFFFFFFFF),

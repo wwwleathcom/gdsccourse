@@ -10,7 +10,7 @@ class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
   @override
   Widget build(BuildContext context) {
-    switch (helper.isAuth) {
+    switch (helper. inProgress) {
       case 1: return const LoginPage();
       case 2: return const RegisterPage();
       case 3: return const HomePage();

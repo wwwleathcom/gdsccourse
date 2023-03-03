@@ -49,7 +49,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 48,
                     ),
                     Text(
-                      helper.title[1],
+                      helper.myRouteList[2][0],
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
@@ -104,7 +104,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     MyButton(
                       myOnTap: () {
-                        Navigator.pushNamed(context, helper.routeList[1]);
+                        Navigator.pushNamed(context, helper.myRouteList[1][1]);
                       },
                       myTextButton: 'Login',
                       myFillColor: const Color(0xFFFFFFFF),

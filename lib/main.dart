@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: helper.routeList[0],
+      initialRoute: helper.myRouteList[0][1],
       routes: {
-        helper.routeList[0]: (context) => const AuthPage(),
-        helper.routeList[1]: (context) => const LoginPage(),
-        helper.routeList[2]: (context) => const RegisterPage(),
-        helper.routeList[3]: (context) => const HomePage(),
-        helper.routeList[4]: (context) => const AnimatedLimiterPage(),
-        helper.routeList[5]: (context) => const AnimatedListPage(),
+        helper.myRouteList[0][1]: (context) => const AuthPage(),
+        helper.myRouteList[1][1]: (context) => const LoginPage(),
+        helper.myRouteList[2][1]: (context) => const RegisterPage(),
+        helper.myRouteList[3][1]: (context) => const HomePage(),
+        helper.myRouteList[4][1]: (context) => const AnimatedLimiterPage(),
+        helper.myRouteList[5][1]: (context) => const AnimatedListPage(),
       },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

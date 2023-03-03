@@ -20,7 +20,7 @@ class _AnimatedLimiterPageState extends State<AnimatedLimiterPage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: helper.frontColor,
-        title: const Text('Animation Limiter'),
+        title: Text(helper.myRouteList[4][0]),
         centerTitle: true,
       ),
       body: AnimationLimiter(

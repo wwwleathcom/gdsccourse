@@ -62,7 +62,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
         title: Column(
           children: [
             const SizedBox(height: 10),
-            const Text('Animated List'),
+            Text(helper.myRouteList[5][0]),
             IconButton(onPressed: _addItem, icon: const Icon(Icons.add)),
           ],
         ),
