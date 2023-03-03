@@ -64,6 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                       myIcon: Icons.email,
                       myText: 'Email',
                       myTextInputType: TextInputType.emailAddress,
+                      myObscureText:false,
                     ),
                     MyTextFormField(
                       myController: passwordController,

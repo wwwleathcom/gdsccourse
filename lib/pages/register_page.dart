@@ -66,18 +66,21 @@ class _RegisterPageState extends State<RegisterPage> {
                       myIcon: Icons.person,
                       myText: 'Full Name',
                       myTextInputType: TextInputType.name,
+                      myObscureText:false,
                     ),
                     MyTextFormField(
                       myController: phoneController,
                       myIcon: Icons.phone,
                       myText: 'Phone',
                       myTextInputType: TextInputType.phone,
+                      myObscureText:false,
                     ),
                     MyTextFormField(
                       myController: emailController,
                       myIcon: Icons.email,
                       myText: 'Email',
                       myTextInputType: TextInputType.emailAddress,
+                      myObscureText:false,
                     ),
                     MyTextFormField(
                       myController: passwordController,
